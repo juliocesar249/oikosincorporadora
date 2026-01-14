@@ -1,0 +1,10 @@
+:root {
+  --default-text-color: #2D3334;
+  --default-background-color: #E9E0D3
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
