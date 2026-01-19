@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+:root {
+  --default-color-text: #2D3334;
+  --default-background: url("./assets/img/main-background.png");
+}
+
+html {
+  color: var(--default-color-text);
+  font-family: "Montserrat", serif;
+}
