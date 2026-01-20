@@ -6,7 +6,6 @@ import { Carousel } from "../components/Carousel";
 import { InfoPageHeader } from "../components/InfoPageHeader";
 import { TextCard } from "../components/TextCard";
 import { OnGoingImageCard } from "../components/OnGoingImageCard";
-import { useEffect } from "react";
 import { SectionTitle } from "../components/SectionTitle";
 import { BulletList } from "../components/BulletList";
 import { GoogleMap } from "../components/GoogleMap";
