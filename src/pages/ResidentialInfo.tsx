@@ -9,9 +9,10 @@ import { OnGoingImageCard } from "../components/OnGoingImageCard";
 import { SectionTitle } from "../components/SectionTitle";
 import { BulletList } from "../components/BulletList";
 import { GoogleMap } from "../components/GoogleMap";
+import { useEffect } from "react";
 
 export function ResidentialInfo() {
-  // useEffect(() => scrollTo({ top: 0 }));
+  useEffect(() => scrollTo({ top: 0 }));
   const [searchParams] = useSearchParams();
 
   const residentialIdString = searchParams.get("id");
