@@ -8,6 +8,7 @@ import { TextCard } from "../components/TextCard";
 import { OnGoingImageCard } from "../components/OnGoingImageCard";
 import { useEffect } from "react";
 import { SectionTitle } from "../components/SectionTitle";
+import { BulletList } from "../components/BulletList";
 
 export function ResidentialInfo() {
   // useEffect(() => scrollTo({ top: 0 }));
@@ -62,11 +63,7 @@ export function ResidentialInfo() {
         <SectionTitle>Especificações</SectionTitle>
         <TextCard>
           <p className="font-bold text-[16px] text-center">{residential.characteristics.totalArea}</p>
-          <ol className="list-disc ml-7">
-            {residential.characteristics.interior.map((str, i) => <li key={i + "c"}>
-              {str}
-            </li>)}
-          </ol>
+          <BulletList items={residential.characteristics.interior} keyComplement="c" />
         </TextCard>
       </section>
 
@@ -77,12 +74,7 @@ export function ResidentialInfo() {
       <section className="mt-6 w-full">
         <SectionTitle>Formas de Pagamento</SectionTitle>
         <div className={`bg-white pt-2 pb-2 pl-1 pr-1 w-full`}>
-          <ul className="list-disc ml-7">
-            {residential.payments.map((p, i) =>
-              <li key={i + "p"} className="">
-                {p}
-              </li>)}
-          </ul>
+          <BulletList items={residential.payments} keyComplement="p" />
         </div>
       </section>
 
