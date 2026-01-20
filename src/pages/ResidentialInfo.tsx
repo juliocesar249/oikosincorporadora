@@ -9,6 +9,7 @@ import { OnGoingImageCard } from "../components/OnGoingImageCard";
 import { useEffect } from "react";
 import { SectionTitle } from "../components/SectionTitle";
 import { BulletList } from "../components/BulletList";
+import { GoogleMap } from "../components/GoogleMap";
 
 export function ResidentialInfo() {
   // useEffect(() => scrollTo({ top: 0 }));
@@ -55,7 +56,7 @@ export function ResidentialInfo() {
           <p className="pb-2">
             {residential.characteristics.surroundings}
           </p>
-          <iframe src={`https://www.google.com/maps?q=${residential.location.long}&z=16&output=embed`} className="w-full h-50"></iframe>
+          <GoogleMap location={residential.location.long} />
         </TextCard>
       </section>
 
