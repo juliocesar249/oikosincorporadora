@@ -1,4 +1,4 @@
-import oikosLogo from "../assets/img/logo.png";
+import oikosLogo from "../assets/img/logo-completa.png";
 import titleBackground from "../assets/img/title-background.png";
 import { MainTemplate } from "../templates/MainTemplate";
 import { ResidentialsCards } from "../components/ResidentialsCards";

@@ -11,18 +11,16 @@ const residentialsState: residentialsType[] = [
         "./assets/img/mileto/residencial-mileto-1.jpeg",
         "./assets/img/mileto/residencial-mileto-2.jpeg",
         "./assets/img/mileto/residencial-mileto-3.jpeg",
-        "./assets/img/mileto/residencial-mileto-4.jpeg",
       ],
       blueprints: [
         "./assets/img/mileto/planta-mileto-1.jpeg",
-        "./assets/img/mileto/planta-mileto-2.jpeg",
-        "./assets/img/mileto/planta-mileto-3.jpeg",
-        "./assets/img/mileto/planta-mileto-4.jpeg",
-        "./assets/img/mileto/planta-mileto-5.jpeg",
-        "./assets/img/mileto/planta-mileto-6.jpeg",
+        "./assets/img/mileto/planta-mileto-2.jpg",
+        "./assets/img/mileto/planta-mileto-3.jpg",
+        "./assets/img/mileto/planta-mileto-4.jpg",
+        "./assets/img/mileto/planta-mileto-5.jpg",
       ],
       onGoing: [
-        "./assets/img/mileto/obras-mileto-1.jpeg",
+        "./assets/img/mileto/obras-mileto-1.jpg",
       ]
     },
     concept: "O Residencial Mileto é um convite para a história que você e sua família podem escrever e deixar como legado em Jaraguá do Sul.\nO fato de estarmos em um terreno de esquina foi transformado em nosso maior diferencial. Mais do que singular composto por 4 casas geminadas, a arquitetura vai além do convencional, com inovação e elegância esse empreendimento cativa e traz inspiração.",
@@ -65,7 +63,7 @@ const residentialsState: residentialsType[] = [
         "./assets/img/creta/planta-creta-2.jpeg",
       ],
       onGoing: [
-        "./assets/img/creta/obras-creta-2.jpeg",
+        "./assets/img/creta/obras-creta-1.jpeg",
       ]
     },
     concept: "O Residencial Creta é a personificação de elegância e comodidade. Nele a arquitetura vai além do convencional, as salas integradas e com pé direito alto na fachada da casa é o diferencial que traz imponência, sensação de amplitude com bom aproveitamento da luz e ventilação natural direta. O \"setup\" perfeito para quem busca conforto e sofisticação em cada detalhe.",
