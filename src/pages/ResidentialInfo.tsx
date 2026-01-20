@@ -41,7 +41,7 @@ export function ResidentialInfo() {
       </div>
 
       <section>
-        <TextCard>
+        <TextCard className="text-justify">
           {residential.concept}
         </TextCard>
       </section>
@@ -52,7 +52,7 @@ export function ResidentialInfo() {
       </section>
 
       <section className="mt-6">
-        <TextCard>
+        <TextCard className="text-justify">
           <p className="pb-2">
             {residential.characteristics.surroundings}
           </p>
