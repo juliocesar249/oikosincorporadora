@@ -1,6 +1,28 @@
 import { atom } from "jotai";
 import type { residentialsType } from "../types/residentials";
 
+import residencialMileto1 from "../assets/img/mileto/residencial-mileto-1.jpeg";
+import residencialMileto2 from "../assets/img/mileto/residencial-mileto-1.jpeg";
+import residencialMileto3 from "../assets/img/mileto/residencial-mileto-1.jpeg";
+
+import plantaMileto1 from "../assets/img/mileto/planta-mileto-1.jpeg";
+import plantaMileto2 from "../assets/img/mileto/planta-mileto-2.jpg";
+import plantaMileto3 from "../assets/img/mileto/planta-mileto-3.jpg";
+import plantaMileto4 from "../assets/img/mileto/planta-mileto-4.jpg";
+import plantaMileto5 from "../assets/img/mileto/planta-mileto-5.jpg";
+
+import obrasMileto1 from "../assets/img/mileto/obras-mileto-1.jpg";
+import obrasMileto2 from "../assets/img/mileto/obras-mileto-2.jpeg";
+
+import residencialCreta1 from "../assets/img/creta/residencial-creta-1.jpeg";
+import residencialCreta2 from "../assets/img/creta/residencial-creta-2.jpeg";
+import residencialCreta3 from "../assets/img/creta/residencial-creta-3.jpeg";
+
+import plantaCreta1 from "../assets/img/creta/planta-creta-1.jpeg";
+import plantaCreta2 from "../assets/img/creta/planta-creta-2.jpeg";
+
+import obrasCreta1 from "../assets/img/creta/obras-creta-1.jpeg";
+
 const residentialsState: residentialsType[] = [
   {
     id: 0,
@@ -8,20 +30,20 @@ const residentialsState: residentialsType[] = [
     expectedDelivery: "Entrega Jul/2026",
     images: {
       structure: [
-        "./assets/img/mileto/residencial-mileto-1.jpeg",
-        "./assets/img/mileto/residencial-mileto-2.jpeg",
-        "./assets/img/mileto/residencial-mileto-3.jpeg",
+        residencialMileto1,
+        residencialMileto2,
+        residencialMileto3,
       ],
       blueprints: [
-        "./assets/img/mileto/planta-mileto-1.jpeg",
-        "./assets/img/mileto/planta-mileto-2.jpg",
-        "./assets/img/mileto/planta-mileto-3.jpg",
-        "./assets/img/mileto/planta-mileto-4.jpg",
-        "./assets/img/mileto/planta-mileto-5.jpg",
+        plantaMileto1,
+        plantaMileto2,
+        plantaMileto3,
+        plantaMileto4,
+        plantaMileto5,
       ],
       onGoing: [
-        "./assets/img/mileto/obras-mileto-1.jpg",
-        "./assets/img/mileto/obras-mileto-2.jpeg",
+        obrasMileto1,
+        obrasMileto2
       ]
     },
     concept: "O Residencial Mileto é um convite para a história que você e sua família podem escrever e deixar como legado em Jaraguá do Sul.\nO fato de estarmos em um terreno de esquina foi transformado em nosso maior diferencial. Mais do que singular composto por 4 casas geminadas, a arquitetura vai além do convencional, com inovação e elegância esse empreendimento cativa e traz inspiração.",
@@ -55,16 +77,16 @@ const residentialsState: residentialsType[] = [
     expectedDelivery: "Entrega Jul/2026",
     images: {
       structure: [
-        "./assets/img/creta/residencial-creta-1.jpeg",
-        "./assets/img/creta/residencial-creta-2.jpeg",
-        "./assets/img/creta/residencial-creta-3.jpeg",
+        residencialCreta1,
+        residencialCreta2,
+        residencialCreta3,
       ],
       blueprints: [
-        "./assets/img/creta/planta-creta-1.jpeg",
-        "./assets/img/creta/planta-creta-2.jpeg",
+        plantaCreta1,
+        plantaCreta2,
       ],
       onGoing: [
-        "./assets/img/creta/obras-creta-1.jpeg",
+        obrasCreta1
       ]
     },
     concept: "O Residencial Creta é a personificação de elegância e comodidade. Nele a arquitetura vai além do convencional, as salas integradas e com pé direito alto na fachada da casa é o diferencial que traz imponência, sensação de amplitude com bom aproveitamento da luz e ventilação natural direta. O \"setup\" perfeito para quem busca conforto e sofisticação em cada detalhe.",
