@@ -7,9 +7,10 @@ import { InfoPageHeader } from "../components/InfoPageHeader";
 import { TextCard } from "../components/TextCard";
 import { OnGoingImageCard } from "../components/OnGoingImageCard";
 import { useEffect } from "react";
+import { SectionTitle } from "../components/SectionTitle";
 
 export function ResidentialInfo() {
-  useEffect(() => scrollTo({top: 0}));
+  // useEffect(() => scrollTo({ top: 0 }));
   const [searchParams] = useSearchParams();
 
   const residentialIdString = searchParams.get("id");
@@ -34,20 +35,22 @@ export function ResidentialInfo() {
     <main className="font-medium text-[16px]">
       <div className="mt-5 mb-10 w-fit text-end ml-auto mr-auto">
         <span className="text-[10px] font-medium">{residential.expectedDelivery}</span>
-        <h1 className="font-bold text-2xl/5">{residential.name}</h1>
+        <SectionTitle className="text-2xl/5">{residential.name}</SectionTitle>
       </div>
 
-      <TextCard>
-        {residential.concept}
-      </TextCard>
+      <section>
+        <TextCard>
+          {residential.concept}
+        </TextCard>
+      </section>
 
       <section className="mt-6 bg-white pt-2 pb-2 pl-1 pr-1">
         <Carousel images={residential.images.structure} />
         <p className="mt-1 font-normal text-[15px] w-60 text-center mr-auto ml-auto">{residential.location.long}</p>
       </section>
 
-      <section>
-        <TextCard className="mt-6">
+      <section className="mt-6">
+        <TextCard>
           <p className="pb-2">
             {residential.characteristics.surroundings}
           </p>
@@ -55,8 +58,8 @@ export function ResidentialInfo() {
         </TextCard>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-bold text-center mt-6">Especificações</h2>
+      <section className="mt-6">
+        <SectionTitle>Especificações</SectionTitle>
         <TextCard>
           <p className="font-bold text-[16px] text-center">{residential.characteristics.totalArea}</p>
           <ol className="list-disc ml-7">
@@ -72,7 +75,7 @@ export function ResidentialInfo() {
       </section>
 
       <section className="mt-6 w-full">
-        <p className="text-2xl font-bold text-center">Formas de Pagamento</p>
+        <SectionTitle>Formas de Pagamento</SectionTitle>
         <div className={`bg-white pt-2 pb-2 pl-1 pr-1 w-full`}>
           <ul className="list-disc ml-7">
             {residential.payments.map((p, i) =>
@@ -85,7 +88,7 @@ export function ResidentialInfo() {
 
       <section className={`mt-6 ${residential.images.onGoing.length > 1 ? "" : "mb-6"} `}>
         <div className="text-center mb-4">
-          <h2 className="font-bold text-2xl">Acompanhe conosco!</h2>
+          <SectionTitle>Acompanhe conosco!</SectionTitle>
           <p className="text-base/4">Percentual de evolução: {residential.donePercentage * 100}%</p>
         </div>
         <OnGoingImageCard imagePaths={residential.images.onGoing} />
