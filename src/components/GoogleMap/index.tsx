@@ -1,3 +1,3 @@
-export function GoogleMap({ location }: { location: string }) {
-  return <iframe src={`https://www.google.com/maps?q=${location}&z=16&output=embed`} className="w-full h-50"></iframe>
+export function GoogleMap({ address }: { address: string }) {
+  return <iframe src={`https://www.google.com/maps?q=${address}&z=16&output=embed`} className="w-full h-50"></iframe>
 }

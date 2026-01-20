@@ -56,7 +56,7 @@ export function ResidentialInfo() {
           <p className="pb-2">
             {residential.characteristics.surroundings}
           </p>
-          <GoogleMap location={residential.location.long} />
+          <GoogleMap address={residential.location.long} />
         </TextCard>
       </section>
 
