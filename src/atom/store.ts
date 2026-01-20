@@ -21,6 +21,7 @@ const residentialsState: residentialsType[] = [
       ],
       onGoing: [
         "./assets/img/mileto/obras-mileto-1.jpg",
+        "./assets/img/mileto/obras-mileto-2.jpeg",
       ]
     },
     concept: "O Residencial Mileto é um convite para a história que você e sua família podem escrever e deixar como legado em Jaraguá do Sul.\nO fato de estarmos em um terreno de esquina foi transformado em nosso maior diferencial. Mais do que singular composto por 4 casas geminadas, a arquitetura vai além do convencional, com inovação e elegância esse empreendimento cativa e traz inspiração.",
@@ -29,7 +30,7 @@ const residentialsState: residentialsType[] = [
       short: "Jaraguá99"
     },
     characteristics: {
-      surroundings: "Constante crescimento e valorização, acesso rápido e descomplicado ao centro, unindo a tranquilidade de um bairro valorizado à dinâmica urbana (proximidade imediata a comércios variados, escolas, farmácias e transporte público)",
+      surroundings: "Constante crescimento e valorização, acesso rápido e descomplicado ao centro, unindo a tranquilidade de um bairro valorizado à dinâmica urbana (proximidade imediata a comércios variados, escolas, farmácias e transporte público).",
       totalArea: "Unidades com áreas totais de 69,05 à 70,74m²",
       interior: [
         "Pé-direito alto",
