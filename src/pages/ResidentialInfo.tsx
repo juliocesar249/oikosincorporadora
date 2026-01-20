@@ -74,9 +74,9 @@ export function ResidentialInfo() {
 
       <section className="mt-6 w-full">
         <SectionTitle>Formas de Pagamento</SectionTitle>
-        <div className={`bg-white pt-2 pb-2 pl-1 pr-1 w-full`}>
+        <TextCard>
           <BulletList items={residential.payments} keyComplement="p" />
-        </div>
+        </TextCard>
       </section>
 
       <section className={`mt-6 ${residential.images.onGoing.length > 1 ? "" : "mb-6"} `}>
