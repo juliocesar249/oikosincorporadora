@@ -13,7 +13,7 @@ import { useEffect } from "react";
 import { TextCardParagraph } from "../components/TextCardParagraph";
 
 export function ResidentialInfo() {
-  useEffect(() => scrollTo({ top: 0 }));
+  useEffect(() => scrollTo({ top: 0 }), []);
   const [searchParams] = useSearchParams();
 
   const residentialIdString = searchParams.get("id");

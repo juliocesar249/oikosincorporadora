@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import carouselArrow from "../../assets/img/carousel-arrow.png";
 
 type CarouselProps = {
@@ -6,10 +6,9 @@ type CarouselProps = {
 }
 export function Carousel({ images }: CarouselProps) {
 
-  const [currentImage, setCurrentImage] = useState(images[0]);
   const [currentPosition, setCurrentPosition] = useState(0);
   const length = images.length;
-  console.log(images)
+  const currentImage = images[currentPosition];
 
   function nextImage() {
     if (currentPosition === (length - 1)) {
@@ -27,10 +26,6 @@ export function Carousel({ images }: CarouselProps) {
 
     setCurrentPosition(prev => prev - 1);
   }
-
-  useEffect(() => setCurrentImage(images[currentPosition]), [setCurrentImage, currentPosition]);
-
-  useEffect(() => console.log(currentImage), [currentImage]);
 
   return (
     <div className="relative">
