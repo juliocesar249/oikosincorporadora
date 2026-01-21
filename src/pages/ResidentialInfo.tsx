@@ -10,6 +10,7 @@ import { SectionTitle } from "../components/SectionTitle";
 import { BulletList } from "../components/BulletList";
 import { GoogleMap } from "../components/GoogleMap";
 import { useEffect } from "react";
+import { TextCardParagraph } from "../components/TextCardParagraph";
 
 export function ResidentialInfo() {
   useEffect(() => scrollTo({ top: 0 }));
@@ -44,7 +45,9 @@ export function ResidentialInfo() {
 
       <section>
         <TextCard className="text-justify">
-          {residential.concept}
+          <TextCardParagraph>
+            {residential.concept}
+          </TextCardParagraph>
         </TextCard>
       </section>
 
@@ -54,10 +57,10 @@ export function ResidentialInfo() {
       </section>
 
       <section className="mt-6">
-        <TextCard className="text-justify">
-          <p className="pb-2">
+        <TextCard className="text-justify pb-2">
+          <TextCardParagraph className="pb-2">
             {residential.characteristics.surroundings}
-          </p>
+          </TextCardParagraph>
           <GoogleMap address={residential.location.long} />
         </TextCard>
       </section>
@@ -67,7 +70,11 @@ export function ResidentialInfo() {
           <SectionTitle>Especificações</SectionTitle>
         </h2>
         <TextCard>
-          <p className="font-bold text-[16px] text-center">{residential.characteristics.totalArea}</p>
+          <TextCardParagraph 
+            className="font-bold text-[16px] text-center"
+          >
+            {residential.characteristics.totalArea}
+          </TextCardParagraph>
           <BulletList items={residential.characteristics.interior} keyComplement="c" />
         </TextCard>
       </section>
