@@ -74,7 +74,7 @@ const residentialsState: residentialsType[] = [
   },
   {
     id: 1,
-    name: "Residêncial Creta",
+    name: "Residencial Creta",
     expectedDelivery: "Entrega Jul/2026",
     images: {
       structure: [
