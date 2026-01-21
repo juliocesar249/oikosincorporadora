@@ -37,7 +37,9 @@ export function ResidentialInfo() {
     <main className="font-medium text-[16px]">
       <div className="mt-5 mb-10 w-fit text-end ml-auto mr-auto">
         <span className="text-[10px] font-medium">{residential.expectedDelivery}</span>
-        <SectionTitle className="text-2xl/5">{residential.name}</SectionTitle>
+        <h1>
+          <SectionTitle className="text-2xl/5">{residential.name}</SectionTitle>
+        </h1>
       </div>
 
       <section>
@@ -61,7 +63,9 @@ export function ResidentialInfo() {
       </section>
 
       <section className="mt-6">
-        <SectionTitle>Especificações</SectionTitle>
+        <h2>
+          <SectionTitle>Especificações</SectionTitle>
+        </h2>
         <TextCard>
           <p className="font-bold text-[16px] text-center">{residential.characteristics.totalArea}</p>
           <BulletList items={residential.characteristics.interior} keyComplement="c" />
@@ -73,7 +77,9 @@ export function ResidentialInfo() {
       </section>
 
       <section className="mt-6 w-full">
-        <SectionTitle>Formas de Pagamento</SectionTitle>
+        <h2>
+          <SectionTitle>Formas de Pagamento</SectionTitle>
+        </h2>
         <TextCard>
           <BulletList items={residential.payments} keyComplement="p" />
         </TextCard>

@@ -31,7 +31,7 @@ export function Carousel({ images }: CarouselProps) {
 
   return (
     <div className="relative">
-      <button className="bg-[rgb(255,255,255,0.22)] backdrop-blur-xs absolute p-3 rounded-[7px] flex top-1/2 -translate-y-1/2 ml-1" onClick={previousImage}>
+      <button aria-label="Imagem anterior" className="bg-[rgb(255,255,255,0.22)] backdrop-blur-xs absolute p-3 rounded-[7px] flex top-1/2 -translate-y-1/2 ml-1" onClick={previousImage}>
         <img src={carouselArrow} alt="Seta do carrossel de imagens para a esquerda." className="w-6 h-6" />
       </button>
       
@@ -41,7 +41,7 @@ export function Carousel({ images }: CarouselProps) {
         className="max-h-100 ml-auto mr-auto" 
       />
       
-      <button className="bg-[rgb(255,255,255,0.22)] backdrop-blur-xs absolute p-3 rounded-[7px] flex top-1/2 -translate-y-1/2 mr-1 right-0">
+      <button aria-label="Próxima imagem" className="bg-[rgb(255,255,255,0.22)] backdrop-blur-xs absolute p-3 rounded-[7px] flex top-1/2 -translate-y-1/2 mr-1 right-0">
         <img src={carouselArrow} alt="Seta do carrossel de imagens para a esquerda." className="w-6 h-6 rotate-180" onClick={nextImage} />
       </button>
     </div>

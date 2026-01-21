@@ -14,8 +14,8 @@ export function Home() {
       <main className="relative w-lvw pb-8 overflow-clip">
         <div className={`w-full bg-[url('./assets/img/title-background.png')] bg-no-repeat bg-contain z-0 relative`}>
           <img src={titleBackground} />
-          <p
-            className="h-full flex justify-center items-center font-[Montserrat] font-bold absolute top-0 left-1/2 -translate-x-1/2 text-2xl w-full">Nossos empreendimentos</p>
+          <h1
+            className="h-full flex justify-center items-center font-[Montserrat] font-bold absolute top-0 left-1/2 -translate-x-1/2 text-2xl w-full">Nossos empreendimentos</h1>
         </div>
         <div className="absolute w-full overflow-clip z-0">
           <div className="relative -left-33">

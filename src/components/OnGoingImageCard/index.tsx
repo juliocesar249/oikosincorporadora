@@ -3,7 +3,7 @@ export function OnGoingImageCard({ imagePaths }: { imagePaths: string[] }) {
   if (imagePaths.length === 1) {
     return (
       <div className="w-54 bg-white p-2 pt-4 pb-8 shadow-[rgb(0,0,0,0.25)] shadow-[1px_2px_4px] ml-auto mr-auto">
-        <img src={imagePaths[0]} loading="lazy" />
+        <img src={imagePaths[0]} loading="lazy" alt="Imagem da construção do residêncial"/>
       </div>
     )
   }
@@ -31,7 +31,7 @@ export function OnGoingImageCard({ imagePaths }: { imagePaths: string[] }) {
               style={isNotFirst ? cardStyle : undefined}
               className={`w-54 bg-white p-2 pt-4 pb-8 shadow-[rgb(0,0,0,0.25)] shadow-[0px_4px_4px] relative ${isOdd ? "self-end" : ""}`}>
 
-              <img src={path} loading="lazy"/>
+              <img src={path} loading="lazy" alt="Imagem da construção do residêncial"/>
             </div>
           )
         })
