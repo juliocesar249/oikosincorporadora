@@ -9,6 +9,7 @@ export function Carousel({ images }: CarouselProps) {
   const [currentImage, setCurrentImage] = useState(images[0]);
   const [currentPosition, setCurrentPosition] = useState(0);
   const length = images.length;
+  console.log(images)
 
   function nextImage() {
     if (currentPosition === (length - 1)) {
@@ -27,7 +28,9 @@ export function Carousel({ images }: CarouselProps) {
     setCurrentPosition(prev => prev - 1);
   }
 
-  useEffect(() => setCurrentImage(images[currentPosition]), [setCurrentImage, currentPosition])
+  useEffect(() => setCurrentImage(images[currentPosition]), [setCurrentImage, currentPosition]);
+
+  useEffect(() => console.log(currentImage), [currentImage]);
 
   return (
     <div className="relative">

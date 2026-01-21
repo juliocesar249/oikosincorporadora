@@ -2,8 +2,8 @@ import { atom } from "jotai";
 import type { residentialsType } from "../types/residentials";
 
 import residencialMileto1 from "../assets/img/mileto/residencial-mileto-1.jpeg";
-import residencialMileto2 from "../assets/img/mileto/residencial-mileto-1.jpeg";
-import residencialMileto3 from "../assets/img/mileto/residencial-mileto-1.jpeg";
+import residencialMileto2 from "../assets/img/mileto/residencial-mileto-2.jpeg";
+import residencialMileto3 from "../assets/img/mileto/residencial-mileto-3.jpeg";
 
 import plantaMileto1 from "../assets/img/mileto/planta-mileto-1.jpeg";
 import plantaMileto2 from "../assets/img/mileto/planta-mileto-2.jpg";
