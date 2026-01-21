@@ -22,6 +22,7 @@ import plantaCreta1 from "../assets/img/creta/planta-creta-1.jpeg";
 import plantaCreta2 from "../assets/img/creta/planta-creta-2.jpeg";
 
 import obrasCreta1 from "../assets/img/creta/obras-creta-1.jpeg";
+import obrasCreta2 from "../assets/img/creta/obras-creta-2.jpeg";
 
 const residentialsState: residentialsType[] = [
   {
@@ -86,7 +87,8 @@ const residentialsState: residentialsType[] = [
         plantaCreta2,
       ],
       onGoing: [
-        obrasCreta1
+        obrasCreta1,
+        obrasCreta2,
       ]
     },
     concept: "O Residencial Creta é a personificação de elegância e comodidade. Nele a arquitetura vai além do convencional, as salas integradas e com pé direito alto na fachada da casa é o diferencial que traz imponência, sensação de amplitude com bom aproveitamento da luz e ventilação natural direta. O \"setup\" perfeito para quem busca conforto e sofisticação em cada detalhe.",
