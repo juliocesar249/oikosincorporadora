@@ -10,7 +10,7 @@ export function OnGoingImageCard({ imagePaths }: { imagePaths: string[] }) {
 
   let topValue = 24;
   return (
-    <div className="flex flex-col pr-2 pl-2">
+    <div className="flex flex-col pr-2 pl-2 md:max-w-90 md:ml-auto mr-auto">
       {
         imagePaths.map((path, i) => {
 
@@ -23,7 +23,6 @@ export function OnGoingImageCard({ imagePaths }: { imagePaths: string[] }) {
           if(isNotFirst) {
             topValue += 24;
           }
-
 
           return (
             <div
