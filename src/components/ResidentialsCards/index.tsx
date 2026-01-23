@@ -7,7 +7,7 @@ export function ResidentialsCards() {
 
   return (
     <section
-      className="flex flex-col md:flex-row justify-center items-center pt-15 gap-13"
+      className="flex flex-col md:flex-row justify-center items-center pt-15 gap-13 xl:min-h-[70vh] xl:overflow-clip"
     >
       {
         residentials.map(residential => <ResidentialCard key={residential.id} residential={residential} />)
