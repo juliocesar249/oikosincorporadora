@@ -16,7 +16,7 @@ export function Home() {
     <MainTemplate>
       <header className="w-lvw">
         <img src={oikosLogoCompleta} className="xl:w-1/2 ml-auto mr-auto xl:hidden" alt='Um hexagono vermelho em expiral começando da esquerda para a direita. Abaixo do hexagono possui um texto escrito "OIKOS Incorporadora"' />
-        <div className="flex gap-2 justify-center p-5">
+        <div className="hidden xl:flex ap-2 justify-center p-5">
           <img src={oikosLogo} width={102} height={102} alt="" />
           <div className="font-bold flex flex-col items-center">
             <p className="text-[65px]/16">OIKOS</p>
